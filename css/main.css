@@ -97,18 +97,12 @@ img {
 }
 
 .ice-cream {
-  display: none;
   position: relative;
   z-index: 0;
 }
 
-.hero-bg-picture {
-  position: absolute;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.background-circle {
+.ice-cream::after {
+  content: '';
   position: absolute;
   top: 0px;
   left: 0px;
@@ -117,5 +111,11 @@ img {
   border-radius: 50%;
   z-index: 0;
   background-color: #ffa5ba;
+}
+
+.hero-bg-picture {
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */
