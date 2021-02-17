@@ -36,14 +36,22 @@
   background-color: $menu-bgc;
 }
 
+.hero-bg-picture {
+  position: absolute;
+  z-index: 1;
+
+  overflow: hidden;
+}
+
 .background-circle {
   position: absolute;
-  top: 83px;
-  left: 36px;
+  top: 0px;
+  left: 0px;
 
   width: 346px;
   height: 346px;
   border-radius: 50%;
+  z-index: 0;
 
   background-color: $header-circle-bgc;
 }
