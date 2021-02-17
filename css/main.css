@@ -140,4 +140,13 @@ img {
   z-index: 1;
   overflow: hidden;
 }
+
+.header-menu-call-btn {
+  border: 0;
+}
+
+.burger-svg {
+  width: 20px;
+  height: 12px;
+}
 /*# sourceMappingURL=main.css.map */
