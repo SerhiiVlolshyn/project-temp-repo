@@ -2,13 +2,13 @@
 
 $white-color: #ffffff;
 $pale-lila: #fff5f6;
+$gray-color: #ecebeb;
 $cherry-blossom-pink: #ffb8ca;
 $pink-cherry: #ffa5ba;
 $pink-lila: #e17992;
 $red-color: #d41443;
-$black-color: #000000;
 $dark-crimson: #c7133e;
-$gray-color: #ecebeb;
+$black-color: #000000;
 
 // --bgc-secondary-color: #FFF5F6;
 // --products-container-pink-color:#FFB8CA;
@@ -35,11 +35,15 @@ $header-link-bg: $white-color;
 $header-link-pointer-bg: $crimson;
 $button-products-hover-color: $dark-crimson;
 $button-Howitsmade-hover-color: $gray-color;
+$header-products-link-bgc: $red-color;
 
 // шрифты
 
 $title-color: $black-color;
 $header-font-color: $white-color;
+
+$header-prod-link-color: $white-color;
+$header-him-link-color: $red-color;
 
 // размеры
 
