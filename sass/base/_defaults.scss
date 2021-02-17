@@ -1,4 +1,42 @@
-// цвета
+html {
+  box-sizing: border-box;
+}
 
-$true-white: #ffffff;
-$pink-white: #fff5f6;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.not-for-mobile {
+  display: none;
+}
+
+.font-for-header {
+  font-family: Titan One;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $true-white;
+}
+
+.emphasis-font-for-header {
+  font-size: 48px;
+  line-height: 96.5%;
+
+  color: $crimson;
+}

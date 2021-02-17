@@ -1,0 +1,49 @@
+.hero {
+  min-width: $site-minimum-width;
+  max-width: $phone-width;
+  padding: $hero-paddings;
+  padding-bottom: 160px;
+
+  background-color: $hero-bgc;
+
+  margin: 0 auto;
+  z-index: 1;
+
+  &-header {
+    width: 218px;
+    margin-top: 137px;
+  }
+
+  //   @media screen and (min-width: $tablet-width),
+  //     screen and (max-width: $desktop-width) {
+  //     width: $tablet-width;
+  //   }
+}
+
+.hero-main-link {
+  color: $crimson;
+  text-decoration: none;
+}
+
+.header-drop-menu {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  width: 254px;
+  height: 100vh;
+
+  background-color: $menu-bgc;
+}
+
+.background-circle {
+  position: absolute;
+  top: 83px;
+  left: 36px;
+
+  width: 346px;
+  height: 346px;
+  border-radius: 50%;
+
+  background-color: $header-circle-bgc;
+}
