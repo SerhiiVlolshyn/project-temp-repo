@@ -82,6 +82,17 @@
   }
 }
 
+.header-menu-close-btn {
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  width: 14px;
+  height: 14px;
+
+  background: none;
+  border: 0;
+}
+
 .header-drop-menu {
   position: absolute;
   top: 0px;
@@ -89,9 +100,69 @@
 
   width: 254px;
   height: 100vh;
+  padding: 60px 21px;
+
+  z-index: 5;
 
   background-color: $menu-bgc;
+
+  transition: right 250ms;
 }
+
+.header-buy-now-button {
+  width: 209px;
+  height: 44px;
+  border: 0;
+  border-radius: 22px;
+
+  color: $red-color;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  .menu-buy-now-arrow {
+    margin-left: 16px;
+    font-weight: 900;
+  }
+}
+
+.header-menu-link {
+  text-decoration: none;
+
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: $menu-links-color;
+}
+
+.header-site-navigation {
+  margin-top: 19px;
+
+  li {
+    background: linear-gradient(
+      $menu-lines-color 0%,
+      $menu-bgc 3%,
+      $menu-bgc 97%,
+      $menu-lines-color 100%
+    );
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+}
+
+.header-home-link {
+  color: $red-color;
+}
+
+.is-upped {
+  right: -100%;
+}
+
+// конец меню
 
 .hero-ice-cream {
   position: absolute;
@@ -108,7 +179,9 @@
     content: '';
     position: absolute;
     bottom: 75px;
-    right: -5em;
+    left: 65%;
+
+    transform: translateX(-50%);
 
     width: 346px;
     height: 346px;
@@ -122,8 +195,9 @@
 .hero-bg-picture {
   position: absolute;
   bottom: 0;
-  right: 10vw;
+  left: 63%;
   z-index: 1;
+  transform: translateX(-50%);
 }
 
 .header-menu-call-btn {
@@ -134,8 +208,8 @@
   width: 20px;
   height: 12px;
   border: 0;
-  border-top: 1px solid $menu-lines-color;
-  border-bottom: 1px solid $menu-lines-color;
+  border-top: 1px solid $menu-icon-lines-color;
+  border-bottom: 1px solid $menu-icon-lines-color;
 
   background: none;
 
@@ -146,7 +220,7 @@
     height: 1px;
     position: relative;
     top: -0.02px;
-    background-color: $menu-lines-color;
+    background-color: $menu-icon-lines-color;
   }
 }
 

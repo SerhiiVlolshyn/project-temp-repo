@@ -125,13 +125,76 @@ img {
   background-color: #ecebeb;
 }
 
+.header-menu-close-btn {
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  width: 14px;
+  height: 14px;
+  background: none;
+  border: 0;
+}
+
 .header-drop-menu {
   position: absolute;
   top: 0px;
   right: 0px;
   width: 254px;
   height: 100vh;
+  padding: 60px 21px;
+  z-index: 5;
   background-color: #e17992;
+  -webkit-transition: right 250ms;
+  transition: right 250ms;
+}
+
+.header-buy-now-button {
+  width: 209px;
+  height: 44px;
+  border: 0;
+  border-radius: 22px;
+  color: #d41443;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.header-buy-now-button .menu-buy-now-arrow {
+  margin-left: 16px;
+  font-weight: 900;
+}
+
+.header-menu-link {
+  text-decoration: none;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.header-site-navigation {
+  margin-top: 19px;
+}
+
+.header-site-navigation li {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e18298), color-stop(3%, #e17992), color-stop(97%, #e17992), to(#e18298));
+  background: linear-gradient(#e18298 0%, #e17992 3%, #e17992 97%, #e18298 100%);
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.header-home-link {
+  color: #d41443;
+}
+
+.is-upped {
+  right: -100%;
 }
 
 .hero-ice-cream {
@@ -148,7 +211,9 @@ img {
   content: '';
   position: absolute;
   bottom: 75px;
-  right: -5em;
+  left: 65%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 346px;
   height: 346px;
   border-radius: 50%;
@@ -159,8 +224,10 @@ img {
 .hero-bg-picture {
   position: absolute;
   bottom: 0;
-  right: 10vw;
+  left: 63%;
   z-index: 1;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .header-menu-call-btn {

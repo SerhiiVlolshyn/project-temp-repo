@@ -20,7 +20,7 @@
       <!-- секция Герой -->
       <section class="hero">
 
-        <button class="header-menu-call-btn">
+        <button class="header-menu-call-btn" data-menu-open>
         </button>
 
         <div class="hero-ice-cream">
@@ -36,24 +36,25 @@
               <img src="./images/site-logo.png" alt="рисунок мороженого">
               <span class="header-logo-text">ICECREAM</span> </a>
 
-              <div class="header-drop-menu not-for-mobile"> <!-- временное -->
-                <button type="button">Buy now</button>
+              <div class="header-drop-menu is-upped" data-menu> <!-- временное -->
+                <button class="header-menu-close-btn" type="button" data-menu-close>X</button>
+                <button class="header-buy-now-button" type="button">Buy now <span class="menu-buy-now-arrow">&#62;</span></button>
                 <nav>
-              <ul class="site-navigation list">
+              <ul class="header-site-navigation list">
                 <li>
-                  <a href="">Home</a>
+                  <a class="header-menu-link header-home-link" href="">Home</a>
                 </li>
                 <li>
-                  <a href="">About us</a>
+                  <a class="header-menu-link" href="">About us</a>
                 </li>
                 <li>
-                  <a href="">How it’s made?</a>
+                  <a class="header-menu-link" href="">How it’s made?</a>
                 </li>
                 <li>
-                  <a href="">Our products</a>
+                  <a class="header-menu-link" href="">Our products</a>
                 </li>
                 <li>
-                  <a href="">Contact</a>
+                  <a class="header-menu-link" href="">Contact</a>
                 </li>
               </ul>
               </div>
@@ -92,5 +93,6 @@
       <!-- Конец секции героя -->
 
     </main>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
