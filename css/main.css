@@ -56,6 +56,12 @@ img {
   margin-top: 137px;
 }
 
+.hero-header-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .hero * {
   z-index: 3;
 }
@@ -63,6 +69,16 @@ img {
 .hero-main-link {
   color: #d41443;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-logo-text {
+  margin-left: 20px;
 }
 
 .header-link-list {
@@ -74,7 +90,7 @@ img {
 
 .header-link-list * * {
   display: block;
-  padding: 5px 5px;
+  padding: 7px 13px;
   border-radius: 20px;
   font-family: DM Sans;
   font-size: 8px;
@@ -84,6 +100,7 @@ img {
           align-items: center;
   text-align: center;
   text-decoration: none;
+  letter-spacing: 0.06em;
 }
 
 .header-link-list li + li {
@@ -117,17 +134,21 @@ img {
   background-color: #e17992;
 }
 
-.ice-cream {
-  display: none;
-  position: relative;
+.hero-ice-cream {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 502px;
   z-index: 0;
+  overflow: hidden;
 }
 
-.ice-cream::after {
+.hero-ice-cream::after {
   content: '';
   position: absolute;
-  top: 0px;
-  left: 0px;
+  bottom: 75px;
+  right: -5em;
   width: 346px;
   height: 346px;
   border-radius: 50%;
@@ -137,16 +158,35 @@ img {
 
 .hero-bg-picture {
   position: absolute;
+  bottom: 0;
+  right: 10vw;
   z-index: 1;
-  overflow: hidden;
 }
 
 .header-menu-call-btn {
-  border: 0;
-}
-
-.burger-svg {
+  position: absolute;
+  right: 20px;
+  top: 25px;
   width: 20px;
   height: 12px;
+  border: 0;
+  border-top: 1px solid #d41443;
+  border-bottom: 1px solid #d41443;
+  background: none;
+}
+
+.header-menu-call-btn::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 1px;
+  position: relative;
+  top: -0.02px;
+  background-color: #d41443;
+}
+
+.header-logo {
+  width: 50px;
+  height: 50px;
 }
 /*# sourceMappingURL=main.css.map */

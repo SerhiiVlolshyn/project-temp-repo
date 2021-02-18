@@ -12,6 +12,9 @@
   &-header {
     width: 218px;
     margin-top: 137px;
+    &-main {
+      display: flex;
+    }
   }
 
   * {
@@ -27,6 +30,12 @@
 .hero-main-link {
   color: $crimson;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo-text {
+  margin-left: 20px;
 }
 
 .header-link-list {
@@ -34,7 +43,7 @@
   display: flex;
   * * {
     display: block;
-    padding: 5px 5px;
+    padding: 7px 13px;
     border-radius: 20px;
 
     font-family: DM Sans;
@@ -43,6 +52,10 @@
     align-items: center;
     text-align: center;
     text-decoration: none;
+    letter-spacing: 0.06em;
+  }
+
+  li {
   }
 
   li + li {
@@ -80,17 +93,22 @@
   background-color: $menu-bgc;
 }
 
-.ice-cream {
-  display: none; //убрать потом
-  position: relative;
+.hero-ice-cream {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+
+  height: 502px;
 
   z-index: 0;
 
+  overflow: hidden;
   &::after {
     content: '';
     position: absolute;
-    top: 0px;
-    left: 0px;
+    bottom: 75px;
+    right: -5em;
 
     width: 346px;
     height: 346px;
@@ -103,18 +121,36 @@
 
 .hero-bg-picture {
   position: absolute;
+  bottom: 0;
+  right: 10vw;
   z-index: 1;
-  overflow: hidden;
 }
 
 .header-menu-call-btn {
-  // background-color: rgba($color: #000000, $alpha: 1);
-  border: 0;
-}
+  position: absolute;
+  right: 20px;
+  top: 25px;
 
-.burger-svg {
   width: 20px;
   height: 12px;
-  // fill: currentColor;
-  // color: gray;
+  border: 0;
+  border-top: 1px solid $menu-lines-color;
+  border-bottom: 1px solid $menu-lines-color;
+
+  background: none;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 1px;
+    position: relative;
+    top: -0.02px;
+    background-color: $menu-lines-color;
+  }
+}
+
+.header-logo {
+  width: 50px;
+  height: 50px;
 }
