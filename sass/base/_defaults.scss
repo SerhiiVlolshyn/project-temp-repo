@@ -22,21 +22,23 @@ img {
 
 .not-for-mobile {
   display: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
-.font-for-header {
-  font-family: Titan One;
-  font-size: 26px;
-  line-height: 30px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+.not-for-desktop {
+  display: block;
 
-  color: $header-font-color;
+  @media screen and (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
-.emphasis-font-for-header {
-  font-size: 48px;
-  line-height: 96.5%;
-
-  color: $crimson;
+.only-for-desktop {
+  display: none;
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+  }
 }
